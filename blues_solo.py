@@ -37,8 +37,7 @@ add_note(solo, bass, blues_scale[curr_note], 1.0, beats_per_minute, 1.0)
 
 licks = [ [ [-1, 0.5], [-1, 0.5], [-1, 0.5], [-1, 0.5] ], [ [1,0.5], [1,0.5], [1, 0.5], [1, 0.5] ],  [ [1, 0.5*1.1], [1, 0.5*0.9], [1, 0.5*1.1], [1, 0.5*0.9] ], [ [1,0.25], [-1,0.25], [2, 0.25], [-2, 0.25], [3, 0.25], [-3, 0.25], [4, 0.25], [-4, 0.25] ], [ [1, 0.5], [2, 0.25], [3, 0.5], [4, 0.25], [-8, 0.25] ] ]
 for i in range(4):
-    #lick = licks[choice(range(0,1))]
-    lick = licks[4]
+    lick = licks[choice(range(0,1))]
     for note in lick:
         curr_note += note[0]
         if curr_note < -len(blues_scale):
